@@ -4,6 +4,6 @@
   publish = "dist"
 
 [[redirects]]
-  from = "/api/*"
+  from = "http://localhost:3900/api/*"
   to = "/reactconnect-backend/:splat"
   status = 200
