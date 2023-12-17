@@ -1,9 +1,12 @@
+# Configuración para el frontend
 [build]
-  base = "/"
   command = "npm run build"
-  publish = "/reactconnect-frontend/dist"
+  publish = "reactconnect-frontend/dist"
+  base = "reactconnect-frontend"
 
-[[redirects]]
-  from = "http://localhost:3900/api/*"
-  to = "/reactconnect-backend/:splat"
-  status = 200
+# Configuración para el backend
+[[build]]
+  command = "echo 'No build needed for backend'"
+  publish = "reactconnect-backend"  # o ajusta según la estructura de tu backend
+  base = "reactconnect-backend"
+  ignore = ["reactconnect-frontend/"]  # Ignorar el frontend durante el proceso de construcción del backend
