@@ -2,7 +2,10 @@
 
 ReactConnect es una plataforma de red social potenciada por la pila tecnológica MERN (MongoDB, Express.js, React.js y Node.js). Esta aplicación ofrece a los usuarios una experiencia interactiva y dinámica para conectarse, compartir y colaborar en línea.
 
-![Proyecto3](/reactconnect-frontend/src/assets/img/reactconnect.png)
+- [ReactConnect backend](https://github.com/jose-016al/RC-backend)
+- [ReactConnect frontend](https://github.com/jose-016al/RC-frontend)
+
+![ReactConnect](https://github.com/jose-016al/RC-frontend/blob/master/src/assets/img/reactconnect.png?raw=true)
 
 ## Tecnologías Principales
 
