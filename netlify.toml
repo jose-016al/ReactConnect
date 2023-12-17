@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = "reactconnect-frontend/dist
+[[redirects]]
+  from = "/api/*"
+  to = "/reactconnect-backend/:splat"  
+  status = 200"
