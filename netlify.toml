@@ -1,4 +1,3 @@
 [build]
-  base = "reactconnect-frontend"
-  command = "npm run build"
-  publish = "dist"
+  base = "reactconnect-backend"
+  command = "npm start"
