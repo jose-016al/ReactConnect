@@ -1,6 +1,7 @@
 [build]
-  publish = "/opt/build/repo/reactconnect-frontend"
   command = "npm run build"
+  publish = "reactconnect-frontend/dist"
+  base = "reactconnect-frontend"
 
 [[redirects]]
   from = "/api/*"
