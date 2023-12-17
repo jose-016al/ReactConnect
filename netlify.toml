@@ -1,6 +1,6 @@
 [build]
-  publish = "reactconnect-frontend/dist"
   command = "npm run build"
+  publish = "reactconnect-frontend/"
 
 [[redirects]]
   from = "/api/*"
