@@ -1,14 +1,9 @@
-# Configuración para el frontend
 [build]
-  command = "npm run build"
-  publish = "reactconnect-frontend/dist"
   base = "reactconnect-frontend"
+  command = "npm run build"
+  publish = "dist"
 
-# Configuración para el backend
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-  buildInputs = "reactconnect-backend/**/*"
-  command = "echo 'No build needed for backend'"
-  publish = "reactconnect-backend"  # o ajusta según la estructura de tu backend
-  base = "reactconnect-backend"
-  ignore = ["reactconnect-frontend/"]  # Ignorar el frontend durante el proceso de construcción del backend
+[[redirects]]
+  from = "http://localhost:3900/api/*"
+  to = "../reactconnect-backend/:splat"
+  status = 200
