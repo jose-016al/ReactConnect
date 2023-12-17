@@ -5,7 +5,9 @@
   base = "reactconnect-frontend"
 
 # Configuración para el backend
-[[build]]
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+  buildInputs = "reactconnect-backend/**/*"
   command = "echo 'No build needed for backend'"
   publish = "reactconnect-backend"  # o ajusta según la estructura de tu backend
   base = "reactconnect-backend"
