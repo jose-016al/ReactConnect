@@ -2,8 +2,3 @@
   base = "reactconnect-frontend"
   command = "npm run build"
   publish = "dist"
-
-[[redirects]]
-  from = "http://localhost:3900/api/*"
-  to = "../reactconnect-backend/:splat"
-  status = 200
