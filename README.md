@@ -5,7 +5,7 @@ ReactConnect es una plataforma de red social potenciada por la pila tecnológica
 - [ReactConnect backend](https://github.com/jose-016al/RC-backend)
 - [ReactConnect frontend](https://github.com/jose-016al/RC-frontend)
 
-Disfruta de una visualización simple y atractiva de la red social - [ReactConnect](https://reactconnect.netlify.app/)
+Disfruta de una visualización simple y atractiva de la red social - [ReactConnect](https://reactconnect.onrender.com/social)
 
 ![ReactConnect](https://github.com/jose-016al/RC-frontend/blob/master/src/assets/img/reactconnect.gif)
 
