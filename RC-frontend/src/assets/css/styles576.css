@@ -1,0 +1,235 @@
+@media screen and (max-width: 576px) {
+
+    .login-field {
+        min-height: 100vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .login-background {
+        min-width: 390px;
+    }
+
+        /* ----------Estilos globales---------- */
+    .layout {
+        display: block;
+    }
+
+    .alert {
+        z-index: 3;
+    }
+
+    @keyframes showUp {
+        from {
+            top: -50px;
+            width: 80%; 
+            border-radius: 50%; 
+        }
+        to {
+            top: 50px;
+        }
+    }
+    
+    @keyframes expandAndStay {
+        from {
+            width: 0%; 
+            border-radius: 50%;
+        }
+        to {
+            width: 80%; 
+            border-radius: 0;
+        }
+    }
+    
+    @keyframes shrinkAndHide {
+        from {
+            top: 50px;
+            width: 80%; 
+            border-radius: 0;
+            height: 50px; 
+        }
+        to {
+            top: -50px;
+            width: 0%; 
+            border-radius: 50%; 
+            height: 10px; 
+        }
+    }
+    
+        /* Header */
+    header {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .ham-menu-container {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: 5px;
+        z-index: 2;
+    }
+
+    .ham-menu {
+        background-color: #132043;
+        border-radius: 25px;
+        height: 50px;
+        width: 50px;
+        position: relative;
+        padding: 2px;
+    }
+
+    .ham-menu span {
+        height: 5px;
+        width: 70%;
+        background-color: white;
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s ease;
+    }
+
+    .ham-menu span:nth-child(1) {
+        top: 25%;
+    }
+
+    .ham-menu span:nth-child(3) {
+        top: 75%;
+    }
+
+    .ham-menu.active span:nth-child(3) {
+        top: 50%;
+        transform: 
+            translate(-50%, -50%)
+            rotate(-45deg);
+    }
+
+    .ham-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .ham-menu.active span:nth-child(1) {
+        top: 50%;
+        transform: 
+            translate(-50%, -50%)
+            rotate(45deg);
+    }
+
+    header .navbar {
+        position: fixed;
+        background-color: #132043;
+        z-index: 2;
+        width: 70%;
+        top: 47px;
+        flex-direction: column;
+        right: -100%;
+        transition: 1s ease;
+    }
+
+    header .navbar.active {
+        right: 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav ul li {
+        padding: 20px;
+    }
+
+    /* iamgen */
+    .image-profile {
+        display: none;
+    }
+
+    header nav ul:nth-child(2) li:first-child a {
+        display: none;
+    }
+
+        /* ----------Aside---------- */
+    aside {
+        min-height: 10vh;
+    }
+
+    #profile-info-aside,
+    #profile-info-stats-aside {
+        display: none;
+    }
+
+        /* ----------Section---------- */
+    article {
+        padding: 5px 15px 5px 15px;
+    }
+
+    article div {
+        justify-content: center;
+    }
+
+    article .post-user {
+        width: 100%;
+    }
+
+    article .post-user div {
+        padding-top: 15px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    article .post-user div h4 {
+        margin: 0px 0px 5px 0px;
+    }
+
+    article .post-user div a:nth-child(1) {
+        padding-left: 20px;
+    }
+
+    article .post-user div a {
+        padding: 0px 0px 5px 0px;
+    }
+
+    article .post-user div img {
+        width: 100%;
+    }
+
+    .people-buttons {
+        width: 100%;
+    }
+
+    article .people {
+        flex-direction: column;
+    }
+
+    article .people div {
+        justify-content: center;
+    }
+
+        /* ----------config---------- */
+    .config-form {
+        width: 90%;
+    }
+
+    .config-form .config-form-container {
+        flex-direction: column;
+    }
+    
+    /* ----------Profile---------- */
+    .profile .profile-info-name-user {
+        padding: 5px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+    }
+
+    .delete-publications {
+        width: 0%;
+    }
+}
