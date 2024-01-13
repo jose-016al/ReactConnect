@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter as BrowserRouter, Route, Routes } from 'react-router-dom'
 import { PublicLayout } from '../components/layout/public/PublicLayout'
 import { Login } from '../components/users/Login'
 import { Register } from '../components/users/Register'
